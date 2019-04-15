@@ -37,9 +37,14 @@ local function calculate ( event )
 
 number1 = tonumber(input1.text)
 number2 = tonumber(input2.text)
+answer = 0
+counter = 0
 
-	for x = number1, answer, number2 do 
-		print(answer)
+	while counter ~= number2 do
+		counter = counter + 1
+		answer = answer + number1
+
+		output.text = "= " .. tostring(answer)
 	end
 end
 
